@@ -38,3 +38,9 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+
+def location(request):
+    return render(request, 'blog/location.html')
+
+def helping_us(request):
+    return render(request, 'blog/helping_us.html')
